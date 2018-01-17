@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<title>Tab control</title>
+	</head>
+
+	<body>
+		<div ng-app="app">
+		<div ng-controller="AppController">
+			<h1>Tab control</h1>
+			<h2>{{title}}</h2>
+			<tab-control>
+				<pane title="Pane 1">{{title}}<br/>
+					Text for Pane 1	
+				</pane>
+				<pane title="Pane 2">{{title}}<br/>
+					Text for Pane 2
+				</pane>
+				<pane title="Pane 3">{{title}}<br/>
+					Text for Pane 3
+				</pane>
+			</tab-control>
+		</div>
+		</div>
+
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	
+	</body>
+	
+	
+</html>
