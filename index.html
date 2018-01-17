@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Events (JS)</title>
+	</head>
+
+	<body>
+
+		<div id="div" style="width: 300px; height: 100px; background-color: lightgrey; border: 1px solid black; text-align: center; padding-top: 70px;">
+			<span id="span" style="background-color: yellow; border: red; padding: 20px; border: 1px solid red;">Hello world!</span>
+		</div>
+
+	</body>
+	
+	<script>
+		
+		var div = document.getElementById('div')
+		div.addEventListener('click', function() {
+			console.log("div caption")}, true);
+		div.addEventListener('click', function() {
+			console.log("div bubbling")}, false);
+		var span = document.getElementById('span')
+		span.addEventListener('click', function() {
+			console.log("span caption")}, true);
+		span.addEventListener('click', function() {
+			console.log("span bubbling")}, false);
+		
+	</script>
+	
+</html>
