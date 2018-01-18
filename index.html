@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>'Click' vs 'ng-click'</title>
+		<style>
+			div > div {border: 1px solid lightgrey;
+				padding: 25px;}
+			h3 {color: darkblue;}
+		</style>
+	</head>
+
+	<body ng-app="app">
+	
+		<div ng-controller="AppCtrl">
+
+
+			<div id="1">
+				<h3>Using 'ng-click'</h3>
+				<p>Counter for a: <button type="button" ng-click="counter()">Click me!</button></p>
+				<p>a = {{a}}</p>
+			</div>
+				
+			<div id="2">
+				<h3>Using 'onclick'+$apply</h3>
+				<p>Counter for b: <button type="button" onclick="counterJS()">Click me!</button></p>
+				<p>b = {{b}}</p>
+			</div>
+			
+		</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> 
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	
+	</body>
+	
+</html>
